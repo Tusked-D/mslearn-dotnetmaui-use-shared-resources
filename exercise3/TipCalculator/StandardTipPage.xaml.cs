@@ -4,6 +4,9 @@ public partial class StandardTipPage : ContentPage
 {
     private Color colorNavy = Colors.Navy;
     private Color colorSilver = Colors.Silver;
+    private Color colorGray = Colors.Gray;
+    private Color colorBlue = Colors.Blue;
+
 
     public StandardTipPage()
     {
@@ -29,12 +32,16 @@ public partial class StandardTipPage : ContentPage
     {
         Resources["fgColor"] = colorNavy;
         Resources["bgColor"] = colorSilver;
+        Resources["btnLightColor"] = colorBlue;
+        Resources["btnDarkColor"] = colorBlue;
     }
 
     void OnDark(object sender, EventArgs e)
     {
         Resources["fgColor"] = colorSilver;
         Resources["bgColor"] = colorNavy;
+        Resources["btnLightColor"] = colorGray;
+        Resources["btnDarkColor"] = colorGray;
     }
 
     async void GotoCustom(object sender, EventArgs e)

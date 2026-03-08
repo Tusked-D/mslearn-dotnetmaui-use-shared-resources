@@ -31,8 +31,8 @@
 
         <!-- Swap the foreground/background colors of this page -->
         <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="End" Spacing="100" Grid.Row="4" Grid.ColumnSpan="2">
-            <Button Clicked="OnLight" Text="Light" TextColor="White" Grid.Column="0" />
-            <Button Clicked="OnDark"  Text="Dark"  TextColor="White" Grid.Column="1" />
+            <Button Clicked="OnLight" Text="Light" BackgroundColor="{DynamicResource btnLightColor}" TextColor="White" Grid.Column="0" />
+            <Button Clicked="OnDark"  Text="Dark"  BackgroundColor="{DynamicResource btnLightColor}" TextColor="White" Grid.Column="1" />
         </HorizontalStackLayout>
 
     </Grid>

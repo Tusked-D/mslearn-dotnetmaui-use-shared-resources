@@ -12,11 +12,13 @@
 
             <Color x:Key="bgColor">#C0C0C0</Color>
             <Color x:Key="fgColor">#0000AD</Color>
+            <Color x:Key="btnLightColor">Blue</Color>
+            <Color x:Key="btnDarkColor">Blue</Color>
             <x:Double x:Key="fontSize">22</x:Double>
 
             <Style x:Key="baseLabelStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="{StaticResource fontSize}" />
-                <Setter Property="TextColor" Value="{StaticResource fgColor}" />
+                <Setter Property="TextColor" Value="{DynamicResource fgColor}" />
             </Style>
             
 
