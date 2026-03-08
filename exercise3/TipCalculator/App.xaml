@@ -18,6 +18,7 @@
                 <Setter Property="FontSize" Value="{StaticResource fontSize}" />
                 <Setter Property="TextColor" Value="{StaticResource fgColor}" />
             </Style>
+            f
 
             <Style x:Key="infoLabelStyle" TargetType="Label" BasedOn="{StaticResource baseLabelStyle}">
                 <Setter Property="FontAttributes" Value="Bold" />
