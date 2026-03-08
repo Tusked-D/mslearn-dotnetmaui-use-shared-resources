@@ -14,6 +14,7 @@
             <Color x:Key="fgColor">#0000AD</Color>
             <Color x:Key="btnLightColor">Blue</Color>
             <Color x:Key="btnDarkColor">Blue</Color>
+            <Color x:Key="btnTextColor">White</Color>
             <x:Double x:Key="fontSize">22</x:Double>
 
             <Style x:Key="baseLabelStyle" TargetType="Label">

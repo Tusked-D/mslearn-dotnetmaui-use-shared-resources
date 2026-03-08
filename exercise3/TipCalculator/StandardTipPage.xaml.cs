@@ -1,3 +1,4 @@
+
 namespace TipCalculator;
 
 public partial class StandardTipPage : ContentPage
@@ -6,6 +7,7 @@ public partial class StandardTipPage : ContentPage
     private Color colorSilver = Colors.Silver;
     private Color colorGray = Colors.Gray;
     private Color colorBlue = Colors.Blue;
+    private Color colorWhite = Colors.White;
 
 
     public StandardTipPage()
@@ -34,14 +36,16 @@ public partial class StandardTipPage : ContentPage
         Resources["bgColor"] = colorSilver;
         Resources["btnLightColor"] = colorBlue;
         Resources["btnDarkColor"] = colorBlue;
+        Resources["btnTextColor"] = colorWhite;
     }
 
     void OnDark(object sender, EventArgs e)
     {
         Resources["fgColor"] = colorSilver;
         Resources["bgColor"] = colorNavy;
-        Resources["btnLightColor"] = colorGray;
-        Resources["btnDarkColor"] = colorGray;
+        Resources["btnLightColor"] = colorSilver;
+        Resources["btnDarkColor"] = colorSilver;
+        Resources["btnTextColor"] = colorNavy;
     }
 
     async void GotoCustom(object sender, EventArgs e)
