@@ -2,6 +2,12 @@ namespace TipCalculator;
 
 public partial class CustomTipPage : ContentPage
 {
+    private Color colorNavy = Colors.Navy;
+    private Color colorSilver = Colors.Silver;
+    private Color colorGray = Colors.Gray;
+    private Color colorBlue = Colors.Blue;
+    private Color colorWhite = Colors.White;
+
     public CustomTipPage()
     {
         InitializeComponent();
@@ -41,6 +47,24 @@ public partial class CustomTipPage : ContentPage
 
             tipOutput.Text = tip.ToString("C");
             totalOutput.Text = final.ToString("C");
+        }
+    }
+
+    void OnDarkModeToggled(object sender, ToggledEventArgs e)
+    {
+        if (e.Value) // Dark: fondo azul oscuro, botones azules, texto botones azul
+        {
+            Resources["bgColor"] = colorNavy;
+            Resources["fgColor"] = colorSilver;
+            Resources["btnTextColor"] = colorBlue;
+            Resources["btnCustomCalc"] = colorSilver;
+        }
+        else // Light: fondo plateado, botones azules, texto botones blanco
+        {
+            Resources["bgColor"] = colorSilver;
+            Resources["fgColor"] = colorNavy;
+            Resources["btnTextColor"] = colorWhite;
+            Resources["btnCustomCalc"] = colorBlue;
         }
     }
 
